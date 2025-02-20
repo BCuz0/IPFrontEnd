@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { BrowserRouter as Link } from 'react-router-dom'
 
 function LandingPage() {
   const [films, setFilms] = useState([]);
@@ -29,9 +28,6 @@ function LandingPage() {
   };
   return(
       <div>
-        <nav>
-          <Link to="/">Home</Link> | <Link to="/films">Films</Link>
-        </nav>
         <h1>Top 5 Rented Films</h1>
         <ul>
           {films.map(film => (
